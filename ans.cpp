@@ -191,7 +191,7 @@ void solve() {
     iota(all(best), 0);
     vector<int> perm = best;
     int bestval = check(best);
-    for (int interations = 0; interations < 10000; interations++) {
+    for (int interations = 0; interations < 15000; interations++) {
         random_shuffle(all(perm));
         // cerr << perm << endl;
 
