@@ -62,6 +62,7 @@ void get_path(int u) {
 }
 
 void solve() {
+    srand(time(NULL));
     int n, m; cin >> n >> m;
     sat = vector<vector<int>>(n, vector<int>(m)); for (int i = 0; i < n; i++) for (int j = 0; j < m; j++) cin >> sat[i][j];
     vector<tuple<int, int, int>> events(m);
